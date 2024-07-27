@@ -643,10 +643,13 @@ nav ul li a:hover {
     right: 0;
     top: 60px;
     height: 100vh;
-    width: 70%;
-    width: 70%;
     max-width: 100%;
+    width: 50%;
+    transition: 1s;
+  }
+  .net {
     display: none;
+    transition: display 2s;
   }
   nav ul li {
     margin-left: 0px;
@@ -1439,7 +1442,7 @@ nav ul li a:hover {
   .fq-icon {
     font-size: 20px;
   }
-  .question-answer p{
+  .question-answer p {
     width: 110%;
     font-size: 65%;
   }
