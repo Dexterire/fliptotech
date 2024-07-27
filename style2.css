@@ -645,7 +645,7 @@ nav ul li a:hover {
     height: 100vh;
     max-width: 100%;
     width: 50%;
-    transition: 1s;
+    transition: max-width 1s;
   }
   .net {
     display: none;
@@ -657,7 +657,7 @@ nav ul li a:hover {
     margin-top: 60px;
   }
   nav ul li a {
-    font-size: 30px;
+    font-size: 95%;
     margin-left: 20px;
   }
 
@@ -1177,7 +1177,16 @@ nav ul li a:hover {
 
 @media (max-width: 430px) {
   /*================ hero start =============== */
-
+  nav ul {
+    display: block;
+    background: #020027;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    height: 100vh;
+    max-width: 100%;
+    width: 90%;
+  }
   .hero-container {
     padding-left: 20px;
     padding-right: 20px;
