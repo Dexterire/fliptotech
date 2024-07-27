@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #000;
+        }
+        .header{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,.2),#0e034f),url(/imagex/bg1.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px;
+            align-items: center;
+            text-align: center;
+            background-color: #000;
+            opacity: 0.8;
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 0 30px;
+        }
+        nav ul li a{
+            color: #fff;
+            font-size: 30px;
+            text-decoration: none;
+            position: relative;
+            transition: 10s;
+        }
+
+        nav ul li a::after{
+            content: " ";
+            width: 0;
+            height: 5px;
+            backgroundccolor: red;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        nav ul li a:hover::after{
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 600px){
+            .header{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,.2),#d7d5e3),url(/imagex/bg3.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+            
+        }
+        .cub{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            color: white;
+            animation-name: slideright;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+        @keyframes slideLeft{
+            from{transform: translateX(500px);}
+        }
+        @keyframes slideright{
+            50%{transform: rotateZ(360deg);}
+            30%{background-color: rgb(51, 0, 255);}
+            40%{background-color: rgb(51, 255, 0);}
+            60%{background-color: rgb(255, 225, 0);}
+            100%{background-color: rgb(255, 0, 174);}
+        }
+
+        @keyframes grow{
+            
+            25%{transform: scale(2, 2);}
+        }
+        @keyframes shrink{
+            
+            25%{transform: scale(0.5, 0.5);}
+        }
+    </style> 
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="/imagex/bg3.jpeg" width="100px">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="cub">
+                <h1>MOSES</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>b

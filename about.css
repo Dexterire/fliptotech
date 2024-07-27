@@ -1,0 +1,366 @@
+.about-achievements {
+  margin-top: 3rem;
+}
+.about-achievements-left {
+  margin-left: 40px;
+}
+.about-achievements-left img {
+  width: 450px;
+}
+
+.about-achievements-container {
+  display: grid;
+  grid-template-columns: 46% 60%;
+  gap: 1rem;
+}
+
+.about-achievements-right > p {
+  margin: 1.6rem 0 2.5rem;
+  color: #000000;
+  font-size: 20px;
+  width: 80%;
+}
+.achievements-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 80%;
+  color: white;
+}
+.achievements-card {
+  background-color: #010161;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.achievements-card:hover {
+  background-color: #0505b3;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+.achievements-icon {
+  background-color: red;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+.achievements-card:nth-child(2) .achievements-icon {
+  background-color: rgb(4, 228, 4);
+}
+
+/*========= TEAM SART ===========*/
+
+.team {
+  background-color: #00002e;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 30px;
+  margin-top: 50px;
+}
+
+.team h2 {
+  color: white;
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.team-member {
+  background-color: #020269;
+  padding: 2rem;
+  border: 3px solid transparent;
+  transition: 0.5s;
+  width: 250px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member:hover {
+  background-color: transparent;
+  border-color: #0505b3;
+}
+.team-member-image img {
+  filter: saturate(0);
+  width: 100%;
+}
+.team-member-image img:hover {
+  filter: saturate(1);
+}
+.team-member-info {
+  text-align: center;
+  margin-top: 1.4rem;
+}
+.team-member-info p {
+  color: rgb(249, 228, 228);
+  padding-top: 20px;
+}
+
+.team-member-socials {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0606ff;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.team-member:hover .team-member-socials {
+  right: 0;
+}
+
+.team-member-socials a {
+  padding: 1rem;
+  color: white;
+}
+
+/*=========== Media Query ===========*/
+
+@media screen and (max-width: 1024px) {
+  .about-achievements {
+    margin-top: 2rem;
+  }
+  .about-achievements-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .about-achievements-right {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .team-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .team-member {
+    padding: 1rem;
+  }
+}
+
+/* max width of 768px */
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  .about-achievements-left {
+    margin-left: 40px;
+  }
+  .about-achievements-left img {
+    width: 500px;
+  }
+
+  .about-achievements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-achievements-right > p {
+    margin: 1.6rem 0 2.5rem;
+    color: #000000;
+    font-size: 24px;
+    width: 100%;
+  }
+  .achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.9rem;
+    width: 100%;
+    color: white;
+  }
+
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .team-member {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 549px) {
+  .about-achievements-left {
+    margin-left: 4px;
+  }
+  .about-achievements-left img {
+    width: 400px;
+  }
+
+  .about-achievements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-achievements-right > p {
+    margin: 1.6rem 0 2.5rem;
+    color: #000000;
+    font-size: 20px;
+    width: 100%;
+  }
+  .achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.9rem;
+    width: 100%;
+    color: white;
+  }
+
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .team-member {
+    padding: 1rem;
+    width: 190px;
+  }
+}
+
+
+@media (max-width: 430px){
+  .about-achievements-left {
+    margin-left: 1px;
+  }
+  .about-achievements-left img {
+    width: 350px;
+  }
+  
+  .about-achievements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-achievements-right > h1{
+    text-align: center;
+  }
+  .about-achievements-right > p {
+    margin: 1rem 0 2.5rem;
+    color: #000000;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+  }
+  .achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    color: white;
+  }
+
+
+
+  .achievements-card {
+    background-color: #010161;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    height: 80%;
+  }
+  
+  .achievements-icon {
+    font-size: 1rem;
+  }
+
+
+
+
+
+  .team-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .team-member {
+    padding: 1rem;
+    width: 300px;
+    
+  }
+}
+
+
+
+@media (max-width: 320px){
+  .about-achievements-left {
+    margin-left: 1px;
+  }
+  .about-achievements-left img {
+    width: 250px;
+  }
+  
+  .about-achievements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-achievements-right > h1{
+    text-align: center;
+  }
+  .about-achievements-right > p {
+    margin: 1rem 0 2.5rem;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    width: 100%;
+    color: white;
+  }
+
+
+
+  .achievements-card {
+    background-color: #010161;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    height: 87%;
+  }
+  
+  .achievements-icon {
+    font-size: 1.5rem;
+  }
+  .achievements-card h3{
+    font-size: 26px;
+  }
+
+  .achievements-card p{
+    font-size: 23px;
+  }
+
+
+
+
+
+  .team-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .team-member {
+    padding: 1rem;
+    width: 250px;
+    
+  }
+}

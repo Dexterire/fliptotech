@@ -1,0 +1,2125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #efefef;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #020250;
+  padding-inline: 30px;
+  padding-block: 15px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-left: 70px;
+  list-style-type: none;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.5s;
+}
+nav ul li a:hover {
+  color: red;
+}
+
+.bt {
+  width: 90px;
+  height: 35px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 204, 0);
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.bt:hover {
+  background-color: rgb(255, 204, 0);
+}
+.bt a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/*------------ hero-section-start------------------- */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 60px;
+  padding-right: 50px;
+  padding-top: 60px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.hero-left h3 {
+  color: #515050;
+  padding-bottom: 40px;
+  font-size: 20px;
+}
+.hero-left h1 {
+  font-size: 50px;
+}
+.hero-left p {
+  padding-block: 20px;
+  font-size: 25px;
+}
+.hero-left button {
+  background-color: #ffd000;
+  font-size: 25px;
+  font-weight: 550;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.hero-left button a {
+  color: black;
+  text-decoration: none;
+}
+.hero-right {
+  width: 110rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.hero-right img {
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.number {
+  width: 100%;
+  height: 60px;
+  background-color: #060364;
+  position: relative;
+  top: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 10px;
+}
+
+.first-same {
+  color: white;
+  padding-left: 180px;
+  text-align: center;
+}
+.second-same {
+  color: white;
+  text-align: center;
+}
+.third-same {
+  color: white;
+  padding-right: 180px;
+  text-align: center;
+}
+.first-same p,
+.second-same p,
+.third-same p {
+  padding-top: 10px;
+  color: #efefef;
+}
+
+/*===================== search section start=============*/
+#search-course {
+  padding-left: 70px;
+  margin-block: 40px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+#search-course h1 {
+  font-size: 45px;
+}
+
+.ser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#search-course input {
+  width: 490px;
+  font-size: 20px;
+  padding: 9px 10px;
+  border: none;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#search-course button {
+  height: 60px;
+  background-color: #ffd000;
+  border: none;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#search-course button a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.group {
+  display: flex;
+  gap: 100px;
+}
+
+.benefit h2 {
+  font-size: 25px;
+}
+
+.span {
+  color: blue;
+}
+
+.lists {
+  padding-top: 30px;
+}
+.lists h2 {
+  font-size: 20px;
+}
+.lists p {
+  font-size: 20px;
+}
+
+/*=========== Categories section start =============*/
+
+#category {
+  background-color: #060364;
+  width: 100%;
+  height: 400px;
+  padding-top: 150px;
+  margin-bottom: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#category-item {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  width: 100%;
+  gap: 20px;
+}
+.cat-left {
+  width: 37%;
+}
+.cat-left h1 {
+  font-size: 50px;
+  color: white;
+}
+.cat-left p {
+  padding-block: 30px;
+  font-size: 22px;
+  line-height: 30px;
+  color: white;
+}
+.cat-bt {
+  background-color: #ffd000;
+  border: none;
+  height: 50px;
+}
+.cat-bt:hover {
+  background-color: yellow;
+}
+.cat-bt a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-inline: 10px;
+  color: black;
+}
+.cat-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-right: 20px;
+  margin-left: 1px;
+  width: 62%;
+}
+.cat-item {
+  background-color: #060293;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 8px #04014e;
+}
+.cat-item:hover {
+  box-shadow: 2px 8px 8px #020027;
+}
+.cat-item .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.cat-item h1 {
+  font-size: 25px;
+  font-weight: bolder;
+  padding-block: 10px;
+  color: white;
+}
+.cat-item p {
+  font-size: 17px;
+  line-height: 25px;
+  color: white;
+}
+
+/*=========== Categories section end =============*/
+
+/*=========== Popular courses section start =============*/
+
+.courses-container {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 100px;
+}
+.couses-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  width: 100%;
+}
+
+.popular {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.courses-p {
+  width: 100%;
+  border: 3px solid #ffd000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.courses-p:hover {
+  background-color: #d0d0d0;
+}
+.courses-p img {
+  width: 100%;
+}
+.courses-p h2 {
+  text-align: center;
+  padding-block: 20px;
+}
+.courses-p p {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 22px;
+}
+/*=========== Popular courses section end =============*/
+
+/*=========== Faqs courses section start =============*/
+.faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  background-color: #02013f;
+  padding-block: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+.faqs-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 94%;
+}
+
+.fq {
+  display: flex;
+  justify-content: space-between;
+  background-color: #090583;
+  padding: 15px;
+  color: white;
+  width: 90%;
+}
+.question-answer {
+  width: 100%;
+  height: 100%;
+}
+.question-answer p {
+  height: 100%;
+  padding-top: 12px;
+  font-size: 17px;
+  display: none;
+}
+.question-answer.answer p {
+  display: block;
+}
+
+.question-answer h1 {
+  font-size: 25px;
+}
+.fq-icon {
+  font-size: 40px;
+}
+
+/*=========== faqs courses section end =============*/
+
+/*=========== instructor section start =============*/
+
+#instructor {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  margin-inline: 60px;
+}
+
+.left-inst h2 {
+  font-size: 35px;
+}
+.left-inst p {
+  font-size: 30px;
+  padding-block: 13px;
+  width: 60%;
+}
+
+.perks {
+  display: flex;
+  gap: 70px;
+  padding-block: 10px;
+  margin-bottom: 15px;
+}
+
+.perks ul li {
+  font-size: 45px;
+  color: blue;
+  margin-left: 35px;
+}
+.perks ul li span {
+  color: black;
+  font-size: 28px;
+  padding-bottom: 8px;
+}
+
+.left-inst a {
+  text-decoration: none;
+  background-color: #ffd000;
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.left-inst a:hover {
+  background-color: #fff827;
+}
+
+/*=========== instructor section end =============*/
+
+/*================= student-testimonies start =================*/
+
+#student-testimonies {
+  background-color: #02013f;
+  padding-block: 20px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+#student-testimonies h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.student-review {
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  gap: 2px;
+  margin-top: 20px;
+  overflow-x: scroll;
+}
+.student-review::-webkit-scrollbar {
+  width: 0;
+}
+
+.student-picture {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+  width: 260%;
+}
+
+.st {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+.st img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 8px solid darkblue;
+}
+.st h2 {
+  font-size: 20px;
+  padding-block: 5px;
+}
+
+.report {
+  background-color: #0904ab;
+  padding: 16px;
+  line-height: 25px;
+  margin-top: 70px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.report::after {
+  content: "";
+  width: 100px;
+  height: 70px;
+  background-color: #0904ab;
+  position: absolute;
+  bottom: 150px;
+  right: 43%;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+/*================= student-testimonies end ===================*/
+
+/*================= subscribe start ===================*/
+
+.footers {
+  background-color: #02013f;
+}
+#subscribe {
+  background-color: #efefef;
+  border-top-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  padding: 90px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-item {
+  color: white;
+  background-color: #02013f;
+  padding: 40px 50px;
+  border: none;
+  border-radius: 25px;
+}
+.sub-item h1,
+.sub-item p {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.sub-item input {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.sub-item button {
+  width: 130px;
+  height: 39px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/*================= subscribe end ===================*/
+
+/*=========== footer section start =============*/
+
+#footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #02013f;
+  padding: 50px 50px 10px 50px;
+  color: white;
+}
+
+.footer-con {
+  display: flex;
+  justify-content: space-between;
+  gap: 300px;
+  color: white;
+}
+
+.footer-con h2 {
+  padding-bottom: 20px;
+}
+
+.footer-con p {
+  color: white;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.footer-con p a {
+  color: wheat;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.footer-con p a:hover {
+  color: red;
+}
+
+.copy {
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+/*=========== footer section end =============*/
+
+#show-menu {
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+#hide-menu {
+  color: white;
+  font-size: 35px;
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: red;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+/*================== MEDIA QUERRY ================== */
+
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+    background: #020027;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    height: 100vh;
+    width: 70%;
+    width: 70%;
+    max-width: 100%;
+    display: none;
+  }
+  nav ul li {
+    margin-left: 0px;
+    border-bottom: 2px dotted white;
+    margin-top: 60px;
+  }
+  nav ul li a {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  #show-menu {
+    display: block;
+  }
+  #hide-menu {
+    display: block;
+  }
+
+  .bt {
+    width: 90px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 204, 0);
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  .bt:hover {
+    background-color: rgb(255, 204, 0);
+  }
+  .bt a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  /*================= nav section end ================ */
+
+  /*================ hero start =============== */
+
+  .hero-container {
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .hero-left h3 {
+    color: #515050;
+    padding-bottom: 40px;
+    font-size: 20px;
+  }
+  .hero-left h1 {
+    font-size: 40px;
+  }
+  .hero-left p {
+    padding-block: 20px;
+    font-size: 25px;
+  }
+  .hero-left button {
+    font-size: 20px;
+  }
+
+  .hero-right {
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .hero-right img {
+    width: 100%;
+  }
+  .number {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+    padding-block: 10px;
+  }
+
+  .first-same {
+    padding-left: 8px;
+  }
+
+  .third-same {
+    padding-right: 8px;
+  }
+
+  /* Hero section end */
+
+  /* Search section start */
+  #search-course {
+    padding-left: 7px;
+  }
+  #search-course h1 {
+    font-size: 35px;
+  }
+
+  /* .ser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+} */
+
+  #search-course input {
+    width: 400px;
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+  #search-course button {
+    height: 50px;
+  }
+
+  #search-course button a {
+    font-size: 30px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 200px;
+    margin-left: 20px;
+  }
+  .imgs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgs img {
+    width: 87%;
+  }
+  .ct {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .benefit h2 {
+    font-size: 25px;
+  }
+
+  .lists {
+    padding-top: 30px;
+  }
+  .lists h2 {
+    font-size: 20px;
+  }
+  .lists p {
+    font-size: 22px;
+  }
+  /* search section end */
+
+  /*=========== Categories section start =============*/
+
+  #category {
+    background-color: #060364;
+    width: 100%;
+    height: unset;
+    padding-top: 150px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  #category-item {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .cat-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+  .cat-left h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .cat-left p {
+    padding-block: 25px;
+    font-size: 22px;
+    text-align: center;
+  }
+  .cat-bt {
+    background-color: #ffd000;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+  }
+  .cat-bt a {
+    font-size: 20px;
+    padding-inline: 15px;
+  }
+  .cat-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-right: 20px;
+    margin-left: 1px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .cat-item {
+    background-color: #060293;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .cat-item .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cat-item h1 {
+    font-size: 20px;
+  }
+  .cat-item p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  /*=========== Categories section end =============*/
+
+  /*=========== Popular courses section start =============*/
+
+  .courses-container {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .couses-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+  }
+
+  .popular {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .courses-p {
+    width: 100%;
+    border: 3px solid #ffd000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  .courses-p:hover {
+    background-color: #d0d0d0;
+  }
+  .courses-p img {
+    width: 100%;
+  }
+  .courses-p h2 {
+    text-align: center;
+    padding-block: 4%;
+  }
+  .courses-p p {
+    font-size: 100%;
+  }
+  /*=========== Popular courses section end =============*/
+
+  /*=========== Faqs courses section start =============*/
+  .faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: start;
+    margin-bottom: 100px;
+    background-color: #02013f;
+    padding-block: 25px;
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 100%;
+    height: fit-content !important;
+  }
+  .faqs-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3%;
+    width: 100%;
+  }
+
+  .fq {
+    display: flex;
+    justify-content: space-between;
+    background-color: #090583;
+    padding: 30px;
+    color: white;
+  }
+  .fq:nth-child(6),
+  .fq:nth-child(7),
+  .fq:nth-child(8) {
+    display: none;
+  }
+
+  .question-answer h1 {
+    font-size: 20px;
+  }
+  .fq-icon {
+    font-size: 30px;
+  }
+
+  /*=========== faqs courses section end =============*/
+
+  /*=========== instructor section start =============*/
+
+  #instructor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3px;
+    gap: 110px;
+    margin-top: 50px;
+  }
+
+  .left-inst h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .left-inst p {
+    font-size: 20px;
+    padding-block: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .perks {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-block: 10px;
+    margin-bottom: 15px;
+  }
+
+  .perks ul li {
+    font-size: 45px;
+    color: blue;
+    margin-left: 35px;
+  }
+  .perks ul li span {
+    color: black;
+    font-size: 28px;
+    padding-bottom: 8px;
+  }
+
+  .left-inst a {
+    text-decoration: none;
+    background-color: #ffd000;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+  }
+
+  .left-inst a:hover {
+    background-color: #fff827;
+  }
+
+  .right-inst {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*=========== instructor section end =============*/
+
+  /*================= student-testimonies start =================*/
+
+  #student-testimonies {
+    background-color: #02013f;
+    padding-block: 20px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+  #student-testimonies h1 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+
+  .student-review {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    gap: 2px;
+    margin-top: 20px;
+    overflow-x: scroll;
+  }
+  .student-review::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .student-picture {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    width: 260%;
+  }
+
+  .st {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+  }
+  .st img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid darkblue;
+  }
+  .st h2 {
+    font-size: 20px;
+    padding-block: 5px;
+  }
+
+  .report {
+    background-color: #0904ab;
+    padding: 13px;
+    line-height: 25px;
+    margin-top: 70px;
+    width: 34rem;
+  }
+
+  .report::after {
+    right: 42%;
+  }
+
+  /*================= student-testimonies end ===================*/
+
+  /*================= subscribe start ===================*/
+
+  #subscribe {
+    padding: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-item {
+    color: white;
+    background-color: #02013f;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 25px;
+  }
+  .sub-item h1,
+  .sub-item p {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .sub-item input {
+    width: 300px;
+    font-size: 17px;
+  }
+
+  .sub-item button {
+    font-size: 17px;
+    margin-left: 5px;
+  }
+
+  /*================= subscribe end ===================*/
+
+  /*=========== footer section start =============*/
+
+  #footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: #02013f;
+    padding: 50px 10px 10px 10px;
+    color: white;
+  }
+
+  .footer-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+    color: white;
+    width: 100%;
+  }
+
+  .footer-con h2 {
+    padding-bottom: 18px;
+  }
+
+  .footer-con p {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .footer-con p a {
+    color: wheat;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .footer-con p a:hover {
+    color: red;
+  }
+
+  .copy {
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 430px) {
+  /*================ hero start =============== */
+
+  .hero-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-left h3 {
+    color: #515050;
+    padding-bottom: 40px;
+    font-size: 90%;
+  }
+  .hero-left h1 {
+    font-size: 25px;
+  }
+  .hero-left p {
+    font-size: 20px;
+  }
+  .hero-left button {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+  .hero-right img {
+    width: 100%;
+  }
+  .number {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    align-items: center;
+    padding-block: 10px;
+  }
+
+  .first-same {
+    padding-left: 12px;
+  }
+
+  .third-same {
+    padding-right: 15px;
+  }
+
+  /* Hero section end */
+
+  /* Search section start */
+  #search-course {
+    padding-left: unset;
+    padding-inline: 10px;
+  }
+  #search-course h1 {
+    font-size: 150%;
+    margin: unset;
+    margin-bottom: 10px;
+  }
+
+  /* .ser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+} */
+
+  #search-course input {
+    width: 58%;
+    font-size: 100%;
+    padding: 6px 10px;
+  }
+  #search-course button {
+    height: 50px;
+  }
+
+  #search-course button a {
+    font-size: 20px;
+  }
+
+  .group {
+    gap: 10px;
+    margin-bottom: 10%;
+    margin-left: unset;
+  }
+  .imgs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgs img {
+    width: 85%;
+  }
+  .ct {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .benefit h2 {
+    font-size: 20px;
+  }
+
+  .lists {
+    padding-top: 7%;
+    margin-inline: 2%;
+  }
+  .lists h2 {
+    font-size: 18px;
+  }
+  .lists p {
+    font-size: 17px;
+  }
+  /* search section end */
+
+  /*=========== Categories section start =============*/
+
+  #category {
+    background-color: #060364;
+    width: 100%;
+    height: unset;
+    padding-top: 10%;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #category-item {
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .cat-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cat-left h1 {
+    font-size: 30px;
+  }
+  .cat-left p {
+    padding-block: 25px;
+    font-size: 18px;
+  }
+  .cat-bt {
+    height: 50px;
+  }
+  .cat-bt a {
+    font-size: 18px;
+    padding-inline: 15px;
+  }
+  .cat-right {
+    display: flex;
+    flex-direction: column;
+    margin-right: unset;
+    margin-left: unset;
+    width: 100%;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .cat-item {
+    background-color: #060293;
+    padding: 15px;
+    border-radius: 15px;
+    width: 80%;
+  }
+
+  .cat-item .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cat-item h1 {
+    font-size: 20px;
+  }
+  .cat-item p {
+    font-size: 98%;
+    line-height: 21px;
+  }
+  /*=========== Categories section end =============*/
+
+  /*=========== Popular courses section start =============*/
+
+  .courses-container {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .couses-item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+  }
+
+  .popular {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .courses-p {
+    width: 100%;
+    border: 3px solid #ffd000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  .courses-p h2 {
+    text-align: center;
+    padding-block: 3%;
+    padding-inline: 5%;
+  }
+  .courses-p p {
+    font-size: 80%;
+    padding-inline: 4%;
+  }
+  /*=========== Popular courses section end =============*/
+
+  /*=========== Faqs courses section start =============*/
+  .faqs {
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-left: unset;
+    padding-right: unset;
+    /* padding-inline: 2%; */
+    width: 100%;
+    height: fit-content !important;
+  }
+  .faqs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    width: 100%;
+  }
+
+  .fq {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #090583;
+    padding: 30px;
+    margin-block: 2%;
+    color: white;
+  }
+  .fq:nth-child(6),
+  .fq:nth-child(7),
+  .fq:nth-child(8) {
+    display: none;
+  }
+
+  .question-answer h1 {
+    font-size: 16px;
+  }
+  .fq-icon {
+    font-size: 20px;
+  }
+  .question-answer p{
+    width: 110%;
+    font-size: 65%;
+  }
+
+  /*=========== faqs courses section end =============*/
+
+  /*=========== instructor section start =============*/
+
+  #instructor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3px;
+    gap: 10px;
+    margin-top: 2px;
+    width: 100%;
+    margin: unset;
+  }
+
+  .left-inst h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .left-inst p {
+    font-size: 18px;
+    padding-block: 20px;
+    text-align: center;
+    width: unset;
+  }
+
+  .perks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: unset;
+    padding-block: 10px;
+    margin-bottom: 15px;
+    margin-left: 3%;
+  }
+
+  .perks ul li {
+    font-size: 43px;
+    color: blue;
+    margin-left: 35px;
+  }
+  .perks ul li span {
+    color: black;
+    font-size: 25px;
+    padding-bottom: 8px;
+  }
+
+  .left-inst a {
+    font-size: 20px;
+    margin-left: 35px;
+  }
+
+  .right-inst {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .right-inst img {
+    width: 85%;
+  }
+
+  /*=========== instructor section end =============*/
+
+  /*================= student-testimonies start =================*/
+
+  #student-testimonies {
+    background-color: #02013f;
+    padding-block: 20px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+  #student-testimonies h1 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
+
+  .student-review {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    gap: 2px;
+    margin-top: 20px;
+    overflow-x: scroll;
+  }
+  .student-review::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .student-picture {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    width: 260%;
+  }
+
+  .st {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+  }
+  .st img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid darkblue;
+  }
+  .st h2 {
+    font-size: 20px;
+    padding-block: 5px;
+  }
+
+  .report {
+    background-color: #0904ab;
+    padding: 13px;
+    line-height: 20px;
+    margin-top: 70px;
+    width: 25rem;
+    font-size: 11px;
+    margin-left: 1%;
+  }
+
+  .report::after {
+    right: 40%;
+    bottom: 95%;
+  }
+
+  /*================= student-testimonies end ===================*/
+
+  /*================= subscribe start ===================*/
+
+  #subscribe {
+    padding: 50px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-item {
+    color: white;
+    background-color: #02013f;
+    padding: 30px 10px;
+    border: none;
+    border-radius: 25px;
+    width: 90%;
+  }
+  .sub-item h1,
+  .sub-item p {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .sub-item input {
+    width: 97%;
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .sub-item button {
+    font-size: 15px;
+    width: 90px;
+    margin-left: 1px;
+  }
+
+  /*================= subscribe end ===================*/
+
+  /*=========== footer section start =============*/
+
+  #footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #02013f;
+    padding: 50px 10px 10px 10px;
+    color: white;
+  }
+
+  .footer-con {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: white;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-con h2 {
+    padding-bottom: 1px;
+    padding-top: 18px;
+  }
+
+  .footer-con p {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .footer-con p a {
+    color: wheat;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .footer-con p a:hover {
+    color: red;
+  }
+
+  .copy {
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+    margin-left: unset;
+  }
+}
+
+/* Media screen for mobile view  */
+
+@media (max-width: 320px) {
+  /*================ hero start =============== */
+
+  .hero-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-left h3 {
+    color: #515050;
+    padding-bottom: 30px;
+  }
+  .hero-left h1 {
+    font-size: 100%;
+  }
+  .hero-left p {
+    font-size: 20px;
+  }
+  .hero-left button {
+    font-size: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+  .hero-right img {
+    width: 100%;
+  }
+  .number {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    align-items: center;
+    padding-block: 10px;
+    font-size: 70%;
+  }
+  .download {
+    background-color: red;
+  }
+
+  /* Hero section end */
+
+  /* Search section start */
+
+  #search-course h1 {
+    font-size: 110%;
+  }
+
+  /* .ser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+} */
+
+  #search-course input {
+    width: 60%;
+    font-size: 100%;
+    padding: 6px 10px;
+  }
+  #search-course button {
+    height: 50px;
+  }
+
+  #search-course button a {
+    font-size: 20px;
+  }
+
+  .group {
+    gap: 10px;
+    margin-bottom: 10%;
+    margin-left: unset;
+  }
+  .imgs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgs img {
+    width: 84%;
+  }
+  .ct {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .benefit h2 {
+    font-size: 100%;
+  }
+
+  .lists {
+    padding-top: 7%;
+    margin-inline: 2%;
+  }
+  .lists h2 {
+    font-size: 100%;
+  }
+  .lists p {
+    font-size: 90%;
+  }
+  /* search section end */
+
+  /*=========== Categories section start =============*/
+
+  #category {
+    background-color: #060364;
+    width: 100%;
+    height: unset;
+    padding-top: 10%;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #category-item {
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .cat-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cat-left h1 {
+    font-size: 25px;
+  }
+  .cat-left p {
+    padding-block: 25px;
+    font-size: 90%;
+    line-height: 20px;
+  }
+  .cat-bt {
+    height: 40px;
+  }
+  .cat-bt a {
+    font-size: 18px;
+    padding-inline: 15px;
+  }
+
+  .cat-item {
+    background-color: #060293;
+    padding: 15px;
+    border-radius: 15px;
+    width: 78%;
+  }
+
+  .cat-item .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cat-item h1 {
+    font-size: 19px;
+  }
+  .cat-item p {
+    font-size: 70%;
+    line-height: 16px;
+  }
+  /*=========== Categories section end =============*/
+
+  /*=========== Popular courses section start =============*/
+
+  .courses-container {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .couses-item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    width: 100%;
+  }
+
+  .popular {
+    font-size: 20px;
+    margin-bottom: 1px;
+  }
+
+  .courses-p {
+    width: 100%;
+    border: 3px solid #ffd000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  .courses-p h2 {
+    text-align: center;
+    padding-block: 3%;
+    font-size: 100%;
+    padding-inline: 5%;
+  }
+  .courses-p p {
+    font-size: 80%;
+    padding-inline: 4%;
+  }
+  /*=========== Popular courses section end =============*/
+
+  /*=========== Faqs courses section start =============*/
+  .faqs {
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-left: unset;
+    padding-right: unset;
+    /* padding-inline: 2%; */
+    width: 100%;
+    height: fit-content !important;
+  }
+  .faqs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    width: 100%;
+  }
+
+  .fq {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #090583;
+    padding: 20px 5%;
+    margin-block: 2%;
+    color: white;
+  }
+  .fq:nth-child(6),
+  .fq:nth-child(7),
+  .fq:nth-child(8) {
+    display: none;
+  }
+
+  .question-answer h1 {
+    font-size: 90%;
+  }
+  .fq-icon {
+    font-size: 20px;
+  }
+
+  /*=========== faqs courses section end =============*/
+
+  /*=========== instructor section start =============*/
+
+  #instructor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3px;
+    gap: 5px;
+  }
+
+  .left-inst h2 {
+    font-size: 100%;
+    text-align: center;
+  }
+  .left-inst p {
+    font-size: 100%;
+    padding-block: 20px;
+    padding-inline: 3%;
+  }
+
+  .perks {
+    gap: unset;
+    padding-block: 10px;
+    margin-bottom: 15px;
+    margin-left: 2%;
+  }
+
+  .perks ul li {
+    font-size: 150%;
+    color: blue;
+    margin-left: 35px;
+  }
+  .perks ul li span {
+    color: black;
+    font-size: 80%;
+    padding-bottom: 8px;
+  }
+
+  .left-inst a {
+    /* font-size: 100%; */
+    margin-left: 35px;
+  }
+
+  .right-inst img {
+    width: 80%;
+  }
+
+  /*=========== instructor section end =============*/
+
+  /*================= student-testimonies start =================*/
+
+  #student-testimonies {
+    background-color: #02013f;
+    padding-block: 20px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+  #student-testimonies h1 {
+    text-align: center;
+    color: white;
+    font-size: 100%;
+  }
+
+  /* .student-review {
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  /* gap: 2px;
+  margin-top: 20px;
+  overflow-x: scroll; 
+}*/
+  /* .student-review::-webkit-scrollbar {
+  width: 0;
+} */
+
+  .student-picture {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    width: 260%;
+  }
+
+  .st {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+  }
+  .st img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid darkblue;
+  }
+  .st h2 {
+    font-size: 100%;
+    padding-block: 5px;
+  }
+
+  .report {
+    background-color: #0904ab;
+    padding: 13px;
+    line-height: 19px;
+    margin-top: 70px;
+    width: 20rem;
+    font-size: 65%;
+    margin-left: 1%;
+  }
+
+  .report::after {
+    right: 36%;
+    bottom: 95%;
+  }
+
+  /*================= student-testimonies end ===================*/
+
+  /*================= subscribe start ===================*/
+
+  #subscribe {
+    padding: 50px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-item {
+    color: white;
+    background-color: #02013f;
+    padding: 30px 10px;
+    border: none;
+    border-radius: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sub-item h1,
+  .sub-item p {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 75%;
+  }
+
+  .sub-item input {
+    width: 90%;
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .sub-item button {
+    font-size: 16px;
+    width: 94%;
+    margin-left: 1px;
+  }
+
+  /*================= subscribe end ===================*/
+
+  /*=========== footer section start =============*/
+
+  #footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #02013f;
+    padding: 50px 10px 10px 10px;
+    color: white;
+  }
+
+  .footer-con {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: white;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-con h2 {
+    padding-bottom: 1px;
+    padding-top: 18px;
+  }
+
+  .footer-con p {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .footer-con p a {
+    color: wheat;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .footer-con p a:hover {
+    color: red;
+  }
+
+  .copy {
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+    margin-left: unset;
+  }
+}
